@@ -3,3 +3,13 @@
 * Open **.bashrc** file in your favorite editor. (Try: `gedit ~/.bashrc`)
 * Add the above code to the end of your **.bashrc** file. Save the file and exit.
 * Run `source ~/.bashrc` in terminal to see changes.
+
+#### Special Characters:
+
+* `\h` : hostname up to the first .
+* `\n` : newline
+* `\s` : name of the shell
+* `\t` : current time in 24-hour format
+* `\u` : username of current user
+* `\w` : name of current working directory
+* `\W` : basename/path of current working directory
