@@ -57,14 +57,14 @@ gitstatuscolor=$(tput setaf 220);
 bold=$(tput bold);
 reset=$(tput sgr0);
 
-PS1="\[\033]0;\w\007\]";
+PS1="\[\033]0;\w\007\]"; # Displays current working directory as title of the terminal
 PS1+="\[${bold}\]\n";
-PS1+="\[${usernamecolor}\]\u";
+PS1+="\[${usernamecolor}\]\u"; # Displays username
 PS1+="\[${white}\] at ";
-PS1+="\[${locationcolor}\]\h";
+PS1+="\[${locationcolor}\]\h"; # Displays host/device
 PS1+="\[${white}\] in ";
-PS1+="\[${workingdirectorycolor}\]\w";
-PS1+="\$(prompt_git \"\[${white}\] on \[${gitstatuscolor}\]\" \"\[${gitstatuscolor}\]\")";
+PS1+="\[${workingdirectorycolor}\]\w"; # Displays base path of current working directory
+PS1+="\$(prompt_git \"\[${white}\] on \[${gitstatuscolor}\]\" \"\[${gitstatuscolor}\]\")"; # Displays git status
 PS1+="\n";
 PS1+="\[${white}\]\$ \[${reset}\]";
 export PS1;
