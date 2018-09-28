@@ -58,7 +58,7 @@ bold=$(tput bold);
 reset=$(tput sgr0);
 
 PS1="\[\033]0;\w\007\]"; # Displays current working directory as title of the terminal
-PS1+="\[${bold}\]\n\T\n";
+PS1+="\[${bold}\]\n(\d) \T\n";
 PS1+="\[${usernamecolor}\]\u"; # Displays username
 PS1+="\[${white}\] at ";
 PS1+="\[${locationcolor}\]\h"; # Displays host/device
