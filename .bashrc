@@ -68,3 +68,33 @@ PS1+="\$(prompt_git \"\[${white}\] on \[${gitstatuscolor}\]\" \"\[${gitstatuscol
 PS1+="\n";
 PS1+="\[${white}\]\$ \[${reset}\]";
 export PS1;
+
+# Quickly find out external IP address for your device by typing 'xip'
+alias xip='curl -s http://checkip.dyndns.org/ | grep -o '[0-9][0-9]*.[0-9][0-9]*.[0-9][0-9]*.[0-9]*''
+
+# Quickly check weather for your city right inside the terminal by typing 'weather'
+# Remove '1' from the url for a full weather display. Remove 'm' from the url for Fahrenheit instead of Celsius
+alias weather='curl wttr.in/?1m'
+
+# Make a directory and jump right into it. Combination of mkdir and cd. Just use 'mkcdir folder_name'
+mkcdir()
+{
+	mkdir -p -- "$1" &&
+		cd -P -- "$1"
+}
+
+# Update, upgrade and clean apt packages in your system with just one command. Just type 'update' in terminal
+update () {
+	echo -e "\nStarting system update..."
+	echo -e "\nUpdating list of available apt packages and their versions..."
+	sudo apt update -qq
+	echo -e "\nUpgrading apt packages to newer version..."
+	sudo apt upgrade -yy
+	echo -e "\nRemoving packages no more needed as dependencies..."
+	sudo apt autoremove -yy
+	echo -e "\nRemoving packages that can no longer be downloaded..."
+	sudo apt autoclean
+	echo -e "\nClearing out local repository of retrieved package files..."
+	sudo apt clean
+	echo -e "\nUpdate complete!"
+}
