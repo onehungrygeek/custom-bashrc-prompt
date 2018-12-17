@@ -31,12 +31,16 @@
 * `\[` : begin  a sequence of non-printing characters, which could be used to embed a terminal control sequence into the prompt
 * `\]` : end a sequence of non-printing characters 
 ***
+## Git Status and branch info:
 #### The prompt automatically shows the current git status and branch information with custom colors in the bash if it detects the current directory to be a git repository. The *prompt_git()* function is used to enable git information on your working directory. (Feel free to remove it and related inserts if you want.)
 ***
+## External IP check:
 #### You can check your external IP by executing the command `xip`.
 ***
+### Directory creation:
 #### You can quickly create a directory and also jump into that created directory at the same time using the command `mkcdir <directory_name>` instead of the standard `mkdir <directory_name>`.
 ***
+### Weather info:
 #### You can check weather for your current city by executing the command `weather`.
 ##### (Credits to [Igor Chubin's wttr.in](https://github.com/chubin/wttr.in "GitHub Page for wttr.in"))
 ##### Customize the 'weather' alias in above **.bashrc** with the help of options below:
