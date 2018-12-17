@@ -2,9 +2,9 @@
 * Open **.bashrc** file in your favorite editor. (Try: `gedit ~/.bashrc`)
 * Add the above code to the end of your **.bashrc** file. Save the file and exit.
 * Run `source ~/.bashrc` in terminal to see changes.
-#
+
 ***
-#
+
 #### Special Characters for customizing bash prompt:
 * `\h` : hostname up to the first .
 * `\H` : the hostname
