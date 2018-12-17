@@ -74,7 +74,7 @@ alias xip='curl -s http://checkip.dyndns.org/ | grep -o '[0-9][0-9]*.[0-9][0-9]*
 
 # Quickly check weather for your city right inside the terminal by typing 'weather'
 # Remove '1' from the url for a full weather display. Remove 'm' from the url for Fahrenheit instead of Celsius
-alias weather='curl wttr.in/?1m'
+alias weather='curl wttr.in/?0mq'
 
 # Make a directory and jump right into it. Combination of mkdir and cd. Just use 'mkcdir folder_name'
 mkcdir()
@@ -98,3 +98,5 @@ update () {
 	sudo apt clean
 	echo -e "\nUpdate complete!"
 }
+
+weather
