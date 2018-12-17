@@ -31,10 +31,10 @@
 * `\[` : begin  a sequence of non-printing characters, which could be used to embed a terminal control sequence into the prompt
 * `\]` : end a sequence of non-printing characters 
 ***
-## Git Status and branch info:
+### Git status and branch info:
 #### The prompt automatically shows the current git status and branch information with custom colors in the bash if it detects the current directory to be a git repository. The *prompt_git()* function is used to enable git information on your working directory. (Feel free to remove it and related inserts if you want.)
 ***
-## External IP check:
+### External IP check:
 #### You can check your external IP by executing the command `xip`.
 ***
 ### Directory creation:
