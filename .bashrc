@@ -70,7 +70,7 @@ PS1+="\[${white}\]\$ \[${reset}\]";
 export PS1;
 
 # Quickly find out external IP address for your device by typing 'xip'
-alias xip='curl -s http://checkip.dyndns.org/ | grep -o '[0-9][0-9]*.[0-9][0-9]*.[0-9][0-9]*.[0-9]*''
+alias xip='curl ipinfo.io'
 
 # Quickly check weather for your city right inside the terminal by typing 'weather'
 # Remove '1' from the url for a full weather display. Remove 'm' from the url for Fahrenheit instead of Celsius
