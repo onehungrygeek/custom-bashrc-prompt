@@ -4,6 +4,9 @@
 * Run `source ~/.bashrc` in terminal to see changes.
 ***
 #### Special Characters for customizing bash prompt:
+
+![](https://user-images.githubusercontent.com/19870554/50667767-ed236700-0f88-11e9-9f5a-cca2121646cf.png)
+
 * `\h` : hostname up to the first .
 * `\H` : the hostname
 * `\n` : newline
