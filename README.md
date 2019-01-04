@@ -17,7 +17,11 @@ The prompt automatically shows the current git status and branch information wit
 
 ***
 ### External IP check:
-#### You can check your external IP by executing the command `xip`.
+You can check your external IP by executing the command `xip`.
+
+![](https://user-images.githubusercontent.com/19870554/50669044-db45c200-0f90-11e9-8c23-95a625eb55b1.png)
+
+
 ***
 ### Directory creation:
 #### You can quickly create a directory and also jump into that created directory at the same time using the command `mkcdir <directory_name>` instead of the standard `mkdir <directory_name>`.
