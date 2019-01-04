@@ -101,24 +101,25 @@ update () {
 
 currency()
 {
+	tempAppID=0e71a2430e4d43bdbc28e3b4282ca6a2
         # Default: 1 USD to INR
         # Usage: currency
         if [ -z "$1" ]; then
                 echo
-                curval=$(curl -s -X GET https://openexchangerates.org/api/latest.json?app_id=d18b54b1f112492ca108baa42ede8f4b | jq -r '.rates.INR')
+                curval=$(curl -s -X GET https://openexchangerates.org/api/latest.json?app_id=${tempAppID} | jq -r '.rates.INR')
                 echo "1 USD = "${curval}" INR"
         else
                 # A certain value to INR
                 # Usage: currency 250
                 if [ -z "$2" ]; then
                         echo
-                        curval=$(curl -s -X GET https://openexchangerates.org/api/latest.json?app_id=d18b54b1f112492ca108baa42ede8f4b | jq -r ".rates.INR * "$1"")
+                        curval=$(curl -s -X GET https://openexchangerates.org/api/latest.json?app_id=${tempAppID} | jq -r ".rates.INR * "$1"")
                         echo "$1 USD = "${curval}" INR" | lolcat
                 else
                         # Certain value to certain currency
                         # Usage: currency 250 EUR
                         echo
-curval=$(curl -s -X GET https://openexchangerates.org/api/latest.json?app_id=d18b54b1f112492ca108baa42ede8f4b | jq -r ".rates."$2" * "$1"")
+curval=$(curl -s -X GET https://openexchangerates.org/api/latest.json?app_id=${tempAppID} | jq -r ".rates."$2" * "$1"")
                         echo "$1 USD = "${curval}" $2" | lolcat
                 fi
         fi
