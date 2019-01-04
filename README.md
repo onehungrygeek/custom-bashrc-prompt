@@ -35,7 +35,11 @@
 * `\]` : end a sequence of non-printing characters 
 ***
 ### Git status and branch info:
-#### The prompt automatically shows the current git status and branch information with custom colors in the bash if it detects the current directory to be a git repository. The *prompt_git()* function is used to enable git information on your working directory. (Feel free to remove it and related inserts if you want.)
+The prompt automatically shows the current git status and branch information with custom colors in the bash if it detects the current directory to be a git repository. Also, the icon status changes based on git status and branch name. The *prompt_git()* function is used to enable git information on your working directory. *(Feel free to remove it and related inserts if you want.)*
+
+![](https://user-images.githubusercontent.com/19870554/50668252-dcc0bb80-0f8b-11e9-9940-1f3f82765857.png)
+
+
 ***
 ### External IP check:
 #### You can check your external IP by executing the command `xip`.
