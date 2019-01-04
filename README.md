@@ -23,8 +23,12 @@ You can check your external IP by executing the command `xip`.
 
 
 ***
-### Directory creation:
-#### You can quickly create a directory and also jump into that created directory at the same time using the command `mkcdir <directory_name>` instead of the standard `mkdir <directory_name>`.
+### Directory creation and direct `cd`:
+You can quickly create a directory and also jump into that created directory at the same time using the command `mkcdir <directory_name>` instead of the standard `mkdir <directory_name>`.
+
+![](https://user-images.githubusercontent.com/19870554/50669103-40011c80-0f91-11e9-9deb-98e5f8118775.png)
+
+
 ***
 ### Weather info:
 #### You can check weather for your current city by executing the command `weather`.
