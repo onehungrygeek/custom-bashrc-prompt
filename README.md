@@ -32,7 +32,9 @@ You can quickly create a directory and also jump into that created directory at 
 ***
 ### Weather info:
 You can check weather for your current city by executing the command `weather`.
+
 (Credits to [Igor Chubin's wttr.in](https://github.com/chubin/wttr.in "GitHub Page for wttr.in"))
+
 Customize the 'weather' alias in above **.bashrc** with the help of options below:
 ##### Usage:
     $ curl wttr.in          # current location
