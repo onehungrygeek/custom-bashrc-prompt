@@ -1,4 +1,4 @@
-# Custom `.bashrc` with Git status, quick weather, and more.
+# Custom `.bashrc` with Git status, quick weather, currency conversion and more.
 ![](https://user-images.githubusercontent.com/19870554/50668749-1810b980-0f8f-11e9-922b-1af92652ff84.png)
 * Open **.bashrc** file in your favorite editor. (Try: `gedit ~/.bashrc`)
 * Add the above code to the end of your **.bashrc** file. Save the file and exit.
