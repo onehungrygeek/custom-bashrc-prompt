@@ -35,6 +35,9 @@ You can check weather for your current city by executing the command `weather`.
 
 (Credits to [Igor Chubin's wttr.in](https://github.com/chubin/wttr.in "GitHub Page for wttr.in"))
 
+![](https://user-images.githubusercontent.com/19870554/50669328-886d0a00-0f92-11e9-8307-f1d578234de5.png)
+
+
 Customize the 'weather' alias in above **.bashrc** with the help of options below:
 ##### Usage:
     $ curl wttr.in          # current location
