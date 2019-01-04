@@ -108,7 +108,7 @@ currency()
                 curval=$(curl -s -X GET https://openexchangerates.org/api/latest.json?app_id=d18b54b1f112492ca108baa42ede8f4b | jq -r '.rates.INR')
                 echo "1 USD = "${curval}" INR"
         else
-                # Certain value to INR
+                # A certain value to INR
                 # Usage: currency 250
                 if [ -z "$2" ]; then
                         echo
