@@ -23,6 +23,20 @@ You can check your external IP by executing the command `xip`.
 
 
 ***
+### Currency conversion:
+You can quickly check what the live currency conversion rate is for any currency. **This API converts from US Dollars (USD). The default is set to INR (Indian Ruppees).**
+
+*Note: Please check the .bashrc and replace the `INR` with your favorite currency code*
+
+Use cases (check image below):
+* Check currency conversion from USD to favorite currency (Default: INR)
+* Convert certain amount from USD to favorite currency(Default: INR)
+* Convert certain amount from USD to any other currency
+
+![](https://user-images.githubusercontent.com/19870554/50669678-991e7f80-0f94-11e9-8218-afb94a19b060.png)
+
+
+***
 ### Directory creation and direct `cd`:
 You can quickly create a directory and also jump into that created directory at the same time using the command `mkcdir <directory_name>` instead of the standard `mkdir <directory_name>`.
 
