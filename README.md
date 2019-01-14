@@ -19,7 +19,7 @@ The prompt automatically shows the current git status and branch information wit
 ### External IP check:
 You can check your external IP by executing the command `xip`.
 
-![](https://user-images.githubusercontent.com/19870554/50669044-db45c200-0f90-11e9-8c23-95a625eb55b1.png)
+![](https://user-images.githubusercontent.com/19870554/51093721-7e0df580-1774-11e9-8387-2f17ece5ed63.gif)
 
 
 ***
