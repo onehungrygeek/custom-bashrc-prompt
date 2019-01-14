@@ -73,7 +73,7 @@ export PS1;
 alias xip='echo; curl -s ipinfo.io; echo;'
 
 # Quickly check weather for your city right inside the terminal by typing 'weather'
-# Remove the 'm' from the url to use Fahrenheit instead of Celsius
+# Remove 'm' from the url to use Fahrenheit instead of Celsius
 weather() {
         if [ -z "$1" ]; then
                 echo
