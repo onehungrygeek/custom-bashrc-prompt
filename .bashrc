@@ -73,8 +73,16 @@ export PS1;
 alias xip='echo; curl -s ipinfo.io; echo;'
 
 # Quickly check weather for your city right inside the terminal by typing 'weather'
-# Remove '1' from the url for a full weather display. Remove 'm' from the url for Fahrenheit instead of Celsius
-alias weather='echo; curl wttr.in/?0mq'
+# Remove 'm' from the url for Fahrenheit instead of Celsius
+weather() {
+        if [ -z "$1" ]; then
+                echo
+                curl -s wttr.in/?0mq
+        else
+                echo
+                curl -s wttr.in/"$1"?0mq
+        fi
+}
 
 # Make a directory and jump right into it. Combination of mkdir and cd. Just use 'mkcdir folder_name'
 mkcdir()
