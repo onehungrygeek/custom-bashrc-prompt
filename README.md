@@ -1,4 +1,5 @@
 # Custom *.bashrc* with Git status, random quote, current weather, live currency conversion and more.
+[![My System](https://img.shields.io/badge/My%20System-Ubuntu%2018.10-blue.svg)](https://www.ubuntu.com/#download)
 ![](https://user-images.githubusercontent.com/19870554/51409983-4c5cac00-1b31-11e9-99be-f3dd143e6acb.png)
 * Open **.bashrc** file in your favorite editor. (Try: `gedit ~/.bashrc`)
 * Add the above code to the end of your **.bashrc** file. Save the file and exit.
