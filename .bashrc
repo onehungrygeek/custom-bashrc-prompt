@@ -133,5 +133,12 @@ curval=$(curl -s -X GET https://openexchangerates.org/api/latest.json?app_id=${t
         fi
 }
 
+quote()
+{
+	echo
+	curl -s https://favqs.com/api/qotd | jq -r '[.quote.body, .quote.author] | "\(.[0]) -\(.[1])"'
+}
+
 weather
 currency
+quote
