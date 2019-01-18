@@ -139,6 +139,8 @@ quote()
 	curl -s https://favqs.com/api/qotd | jq -r '[.quote.body, .quote.author] | "\(.[0]) -\(.[1])"'
 }
 
+# Shows current weather, live currency and a random quote at terminal startup.
+# Comment any or all below to disable startup runs for each.
 weather
 currency
 quote
