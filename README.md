@@ -1,8 +1,16 @@
-# Custom *.bashrc* with Git status, quick weather, currency conversion and more.
-![](https://user-images.githubusercontent.com/19870554/50670001-c4a26980-0f96-11e9-8bfb-f75153935fa4.png)
+# Custom *.bashrc* with Git status, random quote, current weather, live currency conversion and more.
+![](https://user-images.githubusercontent.com/19870554/51409983-4c5cac00-1b31-11e9-99be-f3dd143e6acb.png)
 * Open **.bashrc** file in your favorite editor. (Try: `gedit ~/.bashrc`)
 * Add the above code to the end of your **.bashrc** file. Save the file and exit.
 * Run `source ~/.bashrc` in terminal to see changes.
+
+#### ***Requirements for currency conversion and quote fetch:***
+Download and install `jq` by visiting [this link](https://stedolan.github.io/jq/) or simply type the command below in your bash:
+```sh
+sudo snap install jq
+```
+
+
 ***
 #### Special Characters for customizing bash prompt:
 
@@ -20,6 +28,13 @@ The prompt automatically shows the current git status and branch information wit
 You can check your external IP by executing the command `xip`.
 
 ![](https://user-images.githubusercontent.com/19870554/51094030-43f22300-1777-11e9-8428-ceeb11430087.png)
+
+
+***
+### Random quote
+You can view a random quote by typing the command `quote`.
+
+![](https://user-images.githubusercontent.com/19870554/51409549-208cf680-1b30-11e9-9003-9ed52347670c.png)
 
 
 ***
