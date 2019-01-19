@@ -1,4 +1,4 @@
-# Custom *.bashrc* with Git status, random quote, current weather, live currency conversion and more.
+# Custom *.bashrc* with Git status, current tech news, random quote, current weather, live currency conversion, and more.
 [![My System](https://img.shields.io/badge/My%20System-Ubuntu%2018.10-blue.svg)](https://www.ubuntu.com/#download)
 ![](https://user-images.githubusercontent.com/19870554/51409983-4c5cac00-1b31-11e9-99be-f3dd143e6acb.png)
 * Open **.bashrc** file in your favorite editor. (Try: `gedit ~/.bashrc`)
@@ -30,6 +30,15 @@ You can check your external IP by executing the command `xip`.
 
 ![](https://user-images.githubusercontent.com/19870554/51094030-43f22300-1777-11e9-8428-ceeb11430087.png)
 
+***
+### News:
+(Credits to [Alvin Lin's getnews.tech](https://github.com/omgimanerd/getnews.tech "GitHub Page for getnews.tech"))
+
+You can get the latest news from various different sources by simply typing `news`.
+My favorite default list of sources is **google-news, hacker-news, mashable, polygon, techcrunch, techradar, the-next-webt, the-verge, and wired-de**. Find other sources by typing `curl getnews.tech/sources`
+
+*Below screenshot is a short example. The script by default displays `20` articles from all the above listed favorite news sources. Feel free to change it in the `.bashrc` under `news` function*
+![](https://user-images.githubusercontent.com/19870554/51421028-77adbe00-1b66-11e9-805f-8350d9e2a245.png)
 
 ***
 ### Random quote
