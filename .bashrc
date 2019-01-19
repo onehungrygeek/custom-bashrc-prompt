@@ -139,6 +139,22 @@ quote()
 	curl -s https://favqs.com/api/qotd | jq -r '[.quote.body, .quote.author] | "\(.[0]) -\(.[1])"'
 }
 
+news()
+{       COLUMNS=$(tput cols)
+	# Remove any source from below array if needed
+        declare -a sources=("google-news" "hacker-news" "mashable" "polygon" "techcrunch" "techradar" "the-next-web" "the-verge" "wired-de")
+
+        for i in "${sources[@]}"
+        do
+                echo
+                header="Source: "$i""
+                printf "%*s\n" $(((${#header}+$COLUMNS)/2)) "$header"
+                echo
+		# n=20 below displays 20 articles if available.
+                curl getnews.tech/"$i"?n=20\&w="$(tput cols)"
+        done
+}
+
 # Shows current weather, live currency and a random quote at terminal startup.
 # Comment any or all below to disable startup runs for each.
 weather
